@@ -20,3 +20,6 @@ Effective communication in healthcare is important and especially critical in em
 ![bpmn](https://user-images.githubusercontent.com/36053501/47452471-095d9780-d7d3-11e8-9e9c-5215ea948c18.png)
 
 PS : if the photos is not clear > GO to WIKI file to find  google drive links for the diagrams 
+
+
+[java-client-generated.zip](https://github.com/COMP4381/Team3/files/2602052/java-client-generated.zip)
