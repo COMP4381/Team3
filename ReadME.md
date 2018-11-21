@@ -1,11 +1,11 @@
-# Project : Ambulance Booking Emergency System 
+# Project : PALScan for cultural heritage protection   
 
 ## Web services course (COMP4382) >> Team 3 : Nagham Jawabra 1150309 || Israa Hamed 1153216
 
 
 ## Abstract
 
-Effective communication in healthcare is important and especially critical in emergency situations. In our project we propose a new comprehensive emergency system which facilitates the communication process between the patient and the ambulance car which will help book the nearest ambulance car through our composite service system.
+has been tailored from the start to target Mobile Application and use extensive static analysis coupled with dynamic analysis to ensure high coverage of the application’s attack surface, and false positive free results.
 
 
 ## Diagrams : 
