@@ -17,7 +17,7 @@ Mobile Application to protect cultural heritage through scan and uplade them to 
 
 ### BPMN 
 
-![bpmn-diagram](https://user-images.githubusercontent.com/44175754/48811202-64809c80-ed35-11e8-873b-abb8b8409dd3.png)
+![untitled diagram 1](https://user-images.githubusercontent.com/44175754/49721442-e09e3e00-fc6a-11e8-9fb4-fffd5dce408f.jpg)
 PS : if the photos is not clear > GO to WIKI file to find  google drive links for the diagrams 
 
 ## Progress : 
