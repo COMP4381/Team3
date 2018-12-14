@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "palscanpro",
+  "private_key_id": "632642b4adba3e1bd4af14074e028fdfa9f800a2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCUbrSVZjANQFES\nUCqeDA/z+tiajHio1CqVhtuAeetqJSlfrXWLEPMqFmUCtv3Sp7H3E6eGJfnG25C0\nS5Z/W9gpLOqPcK0N9+Ig4R5iziKz+7Jxn3gzNg2FXYXZNoMysqMXu9NsZZkSyqDd\nkbMmTz5q0YDqc7krLuquVqoRduR3cTQKDHz++DgME3Nz5FiyKQSjxgHq/QvYwBzN\nhW2pmGX99tzKh3UueYFyNn6F+v3DAFGX0cj/I5pOaxFLkklFnbVTEzb+nzCxf3Eo\nbdYtwiii4kqV382AG6grQiN5PQJ95pGacG6FKyYSDey4JH0u60jNSay6xY50CRJT\nzhBYw/6hAgMBAAECggEAEBy8SYNgL/ANXNmK5sEUcj2GibA54Mm3HagX56hUX59N\nEG+51LCwVJ89s7+9acJ+VP2zL6KrrGRlHs0dtxF3M3EGvS9T+bIwv7TwIXWS2sq1\nohPXbmetrA5s2xlJwJUXkxn2Z0vYA+wu7h5EviHX+qxnPAv3y7I6E1ag+2hWgIiE\n85uMEowyzaBzgXwxfRoLtrDK0NRkENhsJlrhArBM9zNruxJXyXOd6kqE7Yh/13zE\nsT0j2cFrIJ4abSSG3eK9fPsdeUIoL9fMr/9BkAalUBrwj4iKgy3vDOaEBwvD50+A\nmA6ADQszeW5IPEjYXCbCf9rKj6233iBcQgtr1LHJqQKBgQDGuPTr6nNaV8E6YeXC\niZkDHTQ/LZluDwaJJDdG5Oy9pyRu5oE4KCd/vSAOVMh4NHzzA0piGkZh4+Qj/4g1\nGA6qmZohI3F1cHWQKKivA1EXSfHYRgVI/+5VrJuJBUT5hsOirFK4bQxxXOZaP2dp\n6GcBrIU8D+eOXYZE+k6Qw4V77wKBgQC/NwVMM2J8xBwPZslv5Tby45v/kZZlPxd2\nfDbtfr1f9Foh8Z/LB8f9UgpNpPJrEmnipXK1BaMbstA6Qsr1ypz0bHFL0h+lKLaE\nhiQ+AaByxNB3sVWV/+i50JGyy34ng6UPVTX2KiO5pqAQLyVECShGmiK082dWPhYv\nNxuJFDbebwKBgBzov0iqvMlBxux1XXVliwr27qjaO13Vdb/xstDvcLlOXXB8vAOt\nY8Gjg8xR7S//gsXfjqyi4eZPvtq1y9zdeRS8b72uaE0LZS7pm1CKjPt0WGh8Fzy9\nbrCsAZx3VcdvIXrC0u3df1fmieRLIQI5OvL1ZBSOw8LkPCpAt7k7mGmlAoGAHxW0\nuMSJuDqxTReqm5QpsKarz4o9Zsww5kQfMdCuvJCernH3RixHqLjTj/fGqP1fVUcM\nNL1r3K7fBvmgwQBlL58JdAf+uPy7XyPndGUTTlUMhsi/XxkxHjP325cVNRtDlBCI\nKzKCiEW8M6VWa48JiyC3j68aF30UYiyVP12X5eUCgYAwJ7ejcvSKGSszeyqMSdBD\nL23FuKAj98m7mYmxusgbPc8SUGt7V0iAoUoNDpI9XWnaG17Z4EhZ8681rkRt0ybs\nmtbfyeaQnrVJ9Nbd6ZAxNvd0FrVISxiMzgq9Kd73IBdeO4yQ0MvViWfIG7T4grA1\ny0g6sCqMWM4mA+k+ZCii1A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "palscanpro@palscanpro.iam.gserviceaccount.com",
+  "client_id": "102206232765890439465",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/palscanpro%40palscanpro.iam.gserviceaccount.com"
+}
