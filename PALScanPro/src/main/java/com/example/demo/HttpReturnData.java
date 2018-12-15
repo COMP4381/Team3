@@ -1,22 +1,21 @@
 package com.example.demo;
 
-import java.util.Map;
-
 public class HttpReturnData {
-	String responseString;
+
+	String returnContent;
 	int statusCode;
 
-	public void setReturnContent(String responseString) {
-		responseString = this.responseString;
+	public String getReturnContent() {
+		return returnContent;
 	}
-
+	public void setReturnContent(String returnContent) {
+		this.returnContent = returnContent;
+	}
+	public int getStatusCode() {
+		return statusCode;
+	}
 	public void setStatusCode(int statusCode) {
-		statusCode = this.statusCode;
-	}
-
-	public Map getReturnContent() {
-		// TODO Auto-generated method stub
-		return null;
+		this.statusCode = statusCode;
 	}
 
 }
