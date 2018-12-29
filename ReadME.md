@@ -19,23 +19,24 @@ IT-motivated solution for cultural protection that enables people themselves to 
 Cheaper solution,because the already used tools in the archiving process is very expensive. Reusability because we will use it in our grad project, and Availability.
 
 # Service Design 
-### SOA Diagram 
+## SOA Diagram 
 
 
 ![soa](https://user-images.githubusercontent.com/36053501/50541484-9e07bb80-0baf-11e9-860b-f61a33ed914c.png)
 
 #### Explaination in detail:
 
-> We have Composite Service Called : Palscan Service
-![image](https://user-images.githubusercontent.com/36053501/50541210-6138c600-0ba9-11e9-9d44-3410adb03ebc.png)
+We have Composite Service Called : Palscan Service  
 
-> We use Different Atomic services which are : Google places , scan service , filter service, Google cloud datastore
+We use Different Atomic services which are : Google places , scan service , filter service, Google cloud datastore  
 
-> And the 3rd party services we use are :Google places,Google cloud datastore
-![image](https://user-images.githubusercontent.com/36053501/50541168-7103da80-0ba8-11e9-8abd-1a8c11c68375.png)
+And the 3rd party services we use are :Google places,Google cloud datastore
 
 
-### BPMN Diagram
+> ![image](https://user-images.githubusercontent.com/36053501/50541522-44ec5780-0bb0-11e9-8ea3-d4ac5c61b768.png)
+
+
+## BPMN Diagram
 
 
 ![picture3](https://user-images.githubusercontent.com/36053501/50541256-4e72c100-0baa-11e9-91c0-3262a0a73e83.jpg)
@@ -46,13 +47,14 @@ We impelemented our services using the RESTful service development paradigm. Whi
 
 ## Composite Service Algorithm According to BPMN 2.0
 ## Applied Technologies
-development environment: eclipse
-programming languages : java (JDK 8)
-frameworks and libraries : swagger 2.0, Spring boot
-deployment platforms (PaaS): Google App Engine (GAE), which is a Google Cloud Platform(GCP) service provided by Google
-application server: Apache Tomcat
 
-![image](https://user-images.githubusercontent.com/36053501/50541416-343ae200-0bae-11e9-8926-1e9c04020e54.png)
+development environment: eclipse  <br/>
+programming languages : java (JDK 8)<br/>
+frameworks and libraries : swagger 2.0, Spring boot<br/>
+deployment platforms (PaaS): Google App Engine (GAE), which is a Google Cloud Platform(GCP) service provided by Google<br/>
+application server: Apache Tomcat<br/>
+
+> ![image](https://user-images.githubusercontent.com/36053501/50541416-343ae200-0bae-11e9-8926-1e9c04020e54.png)
  
 
 # Service Deployment and Monitoring
