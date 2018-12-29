@@ -1,5 +1,5 @@
- Project Final Repoert 
-Web services course (COMP4382) >> Team 3 : Nagham Jawabra 1150309 || Israa Hamed 1153216
+Web Services Course (COMP4382) >> Project Final Repoert >> Team 3 : Nagham Jawabra 1150309 || Israa Hamed 1153216
+
 # PALScan service for cultural heritage protection   
 
 
@@ -20,12 +20,14 @@ Cheaper solution,because the already used tools in the archiving process is very
 
 # Service Design 
 ### SOA Diagram 
-![soa](https://user-images.githubusercontent.com/36053501/48878861-04135d00-ee12-11e8-8325-636ac3bcfa9e.png)
+
+
+![soa](https://user-images.githubusercontent.com/36053501/50541484-9e07bb80-0baf-11e9-860b-f61a33ed914c.png)
 
 #### Explaination in detail:
 
 > We have Composite Service Called : Palscan Service
-![picture1](https://user-images.githubusercontent.com/36053501/50541129-b4aa1480-0ba7-11e9-99cf-2b14393a1072.jpg)
+![image](https://user-images.githubusercontent.com/36053501/50541210-6138c600-0ba9-11e9-9d44-3410adb03ebc.png)
 
 > We use Different Atomic services which are : Google places , scan service , filter service, Google cloud datastore
 
@@ -34,8 +36,10 @@ Cheaper solution,because the already used tools in the archiving process is very
 
 
 ### BPMN Diagram
-![untitled diagram 1](https://user-images.githubusercontent.com/44175754/49721442-e09e3e00-fc6a-11e8-9fb4-fffd5dce408f.jpg)
-PS : if the photos is not clear > GO to WIKI file to find  google drive links for the diagrams 
+
+
+![picture3](https://user-images.githubusercontent.com/36053501/50541256-4e72c100-0baa-11e9-91c0-3262a0a73e83.jpg)
+
 
 # Implementation Details
 We impelemented our services using the RESTful service development paradigm. Which is based on the HTTP protocol which is an RPC-based synchronous communication protocol.And our Data representation is JSON.
@@ -48,7 +52,8 @@ frameworks and libraries : swagger 2.0, Spring boot
 deployment platforms (PaaS): Google App Engine (GAE), which is a Google Cloud Platform(GCP) service provided by Google
 application server: Apache Tomcat
 
- ![picture2](https://user-images.githubusercontent.com/36053501/50541186-0f903b80-0ba9-11e9-9331-e06f7772a110.png)
+![image](https://user-images.githubusercontent.com/36053501/50541416-343ae200-0bae-11e9-8926-1e9c04020e54.png)
+ 
 
 # Service Deployment and Monitoring
 ## Log file
@@ -68,7 +73,9 @@ application server: Apache Tomcat
 ## Documentation for Models
 ## Documentation for Authorization
 ## Authors
+
 > jawabranagham@gmail.com
+
 > Israarajahamed@gmail.com
 
 
