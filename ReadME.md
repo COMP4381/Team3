@@ -26,6 +26,8 @@ Cheaper solution,because the already used tools in the archiving process is very
 
 #### *Explaination in detail:*
 
+Service Provider is Google. and we tested our API through “Advanced REST client. We use Spring Boot to implement our Service, and as for services are :  
+
 We have Composite Service Called : Palscan Service  
 
 We use Different Atomic services which are : Google places , scan service , filter service, Google cloud datastore  
@@ -48,13 +50,11 @@ We impelemented our services using the RESTful service development paradigm. Whi
 ## Composite Service Algorithm According to BPMN 2.0
 
 ### **filterScannedImageUsingPOST**
-> List&lt;Object&gt; filterScannedImageUsingPOST(imagePlugin)
 
 Filter scanned Image
 
 THis operation for enhance scanned image
 
-### Example
 ```java
 // Import classes:
 //import io.swagger.client.ApiException;
@@ -71,6 +71,95 @@ try {
     e.printStackTrace();
 }
 ```
+### **getNameplaceUsingGET**
+
+getLocation
+
+THis operation for where is scanned image taken 
+
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.PalScanProControllerApi;
+
+
+PalScanProControllerApi apiInstance = new PalScanProControllerApi();
+String lat = "lat_example"; // String | lat
+String lng = "lng_example"; // String | lng
+try {
+    List<Object> result = apiInstance.getNameplaceUsingGET(lat, lng);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling PalScanProControllerApi#getNameplaceUsingGET");
+    e.printStackTrace();
+}
+```
+### **getScanImageUsingGET**
+
+get scanned image 
+
+This get scaned image
+
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.PalScanProControllerApi;
+
+
+PalScanProControllerApi apiInstance = new PalScanProControllerApi();
+try {
+    List<Object> result = apiInstance.getScanImageUsingGET();
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling PalScanProControllerApi#getScanImageUsingGET");
+    e.printStackTrace();
+}
+```
+### **getplaceUsingPOST**
+
+get lat &amp; lng
+
+THis operation for where is scanned image taken 
+
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.PalScanProControllerApi;
+
+
+PalScanProControllerApi apiInstance = new PalScanProControllerApi();
+try {
+    List<Object> result = apiInstance.getplaceUsingPOST();
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling PalScanProControllerApi#getplaceUsingPOST");
+    e.printStackTrace();
+}
+```
+
+### **uploadScannedImageUsingPOST**
+
+uploadScannedImage
+
+THis operation for uplaod scanned image with its data
+
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.PalScanProControllerApi;
+
+
+PalScanProControllerApi apiInstance = new PalScanProControllerApi();
+try {
+    List<Object> result = apiInstance.uploadScannedImageUsingPOST();
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling PalScanProControllerApi#uploadScannedImageUsingPOST");
+    e.printStackTrace();
+}
+```
+
+
 
 ## Applied Technologies
 
@@ -95,15 +184,26 @@ We faced many challenges while building our service, First of all we had to chan
 
 # Bonus Zone
 ## Design Patterns
-## Service Monitoring
+### Inventory: Service layers
 
+![image](https://user-images.githubusercontent.com/36053501/50549424-652a1e00-0c65-11e9-8bbb-6bc444aaf32d.png)
+
+## Service Monitoring
+You can view dashboard for APIs here : [https://console.cloud.google.com/apis/dashboard?authuser=1&organizationId=1003645834774&project=palscanpro]
+
+> ![image](https://user-images.githubusercontent.com/36053501/50549092-9142a080-0c5f-11e9-962a-c9b1a1e64e7c.png)
+
+> ![image](https://user-images.githubusercontent.com/36053501/50549239-15962300-0c62-11e9-8906-9bbfcce5f88b.png)
+
+The image above shows that traffic response code of Places API to the request we make through ARC gives 200 OK in rate of 95.83%
+and 403 (which means the the service responded, but the invokation is wrong) in rate of 4.17% 
 
 # APPENDIX
 ## Documentation for API Endpoints :
 
 All URIs are relative to *https://palscanpro.appspot.com/*
 
-# PalScanProControllerApi (CompositeServiceControllerApi)
+### PalScanProControllerApi (CompositeServiceControllerApi)
 
 All URIs are relative to *https://palscanpro.appspot.com/*
 
