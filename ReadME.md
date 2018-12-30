@@ -60,6 +60,8 @@ application server: Apache Tomcat<br/>
 # Service Deployment and Monitoring
 ## Log file
 
+        Team3/Team3Log.csv
+        
 # Conclusion and Discussion
 
 
