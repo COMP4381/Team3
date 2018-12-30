@@ -70,6 +70,9 @@ application server: Apache Tomcat<br/>
 
 # APPENDIX
 ## Documentation for API Endpoints :
+
+        Team3/PalScanControllerApi.md
+      
 ### CompositeServiceControllerApi 
 ### Atomic Controllers 
 ## Documentation for Models
