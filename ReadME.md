@@ -184,9 +184,76 @@ We faced many challenges while building our service, First of all we had to chan
 
 # Bonus Zone
 ## Design Patterns
+
+Exception sheilding - Error codes
+
+    /**
+     * Build call for filterScannedImageUsingPOST
+     * @param imagePlugin imagePlugin (required)
+     * @param progressListener Progress listener
+     * @param progressRequestListener Progress request listener
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     */
+    public com.squareup.okhttp.Call filterScannedImageUsingPOSTCall(String imagePlugin, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/api/palscan/filter/{id}"
+            .replaceAll("\\{" + "imagePlugin" + "\\}", apiClient.escapeString(imagePlugin.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "*/*"
+        };
+        final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+        localVarHeaderParams.put("Content-Type", localVarContentType);
+
+        if(progressListener != null) {
+            apiClient.getHttpClient().networkInterceptors().add(new com.squareup.okhttp.Interceptor() {
+                @Override
+                public com.squareup.okhttp.Response intercept(com.squareup.okhttp.Interceptor.Chain chain) throws IOException {
+                    com.squareup.okhttp.Response originalResponse = chain.proceed(chain.request());
+                    return originalResponse.newBuilder()
+                    .body(new ProgressResponseBody(originalResponse.body(), progressListener))
+                    .build();
+                }
+            });
+        }
+
+        String[] localVarAuthNames = new String[] {  };
+        return apiClient.buildCall(localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call filterScannedImageUsingPOSTValidateBeforeCall(String imagePlugin, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+        
+        // verify the required parameter 'imagePlugin' is set
+        // DP2: Exception sheilding - Error codes
+        if (imagePlugin == null) {
+            throw new ApiException("Missing the required parameter 'imagePlugin' when calling filterScannedImageUsingPOST(Async)");
+        }
+        
+
+        com.squareup.okhttp.Call call = filterScannedImageUsingPOSTCall(imagePlugin, progressListener, progressRequestListener);
+        return call;
+
+    }
 ### Inventory: Service layers
 
-![image](https://user-images.githubusercontent.com/36053501/50549424-652a1e00-0c65-11e9-8bbb-6bc444aaf32d.png)
+![48897867_619417741827478_5576438687899582464_n](https://user-images.githubusercontent.com/36053501/50549622-a40da300-0c68-11e9-8f60-e26f883b61b3.png)
 
 ## Service Monitoring
 You can view dashboard for APIs here : [https://console.cloud.google.com/apis/dashboard?authuser=1&organizationId=1003645834774&project=palscanpro]
